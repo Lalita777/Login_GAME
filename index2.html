@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Lab DOM</title>
+		<script>
+			var parser, xmlDoc;
+			var text = "<persons>" +
+				"<person>" +
+					"<firstName>Alan</firstName>" +
+					"<lastName>Wilkes</lastName>" +
+				"</person>" +
+				"<person>" +
+					"<firstName>Horward</firstName>" +
+					"<lastName>Li</lastName>" +
+				"</person>" +
+				"<person>" +
+					"<firstName>Jeri</firstName>" +
+					"<lastName>White</lastName>" +
+				"</person>" +
+				"<person>" +
+					"<firstName>Horward</firstName>" +
+					"<lastName>Loo</lastName>" +
+				"</person>" +
+				"<person>" +
+					"<firstName>Horward</firstName>" +
+					"<lastName>Li</lastName>" +
+				"</person>"+
+			"</persons>";
+	
+
+			parser = new DOMParser();
+			xmlDoc = parser.parseFromString(text, "text/xml");
+			function start() {
+				alert("Root element = " + xmlDoc.documentElement.nodeName);
+				alert(xmlDoc.documentElement.childNodes[0].childNodes[0].nodeName + " : " + xmlDoc.documentElement.childNodes[0].childNodes[0].childNodes[0].nodeValue);
+				alert(xmlDoc.documentElement.childNodes[1].childNodes[0].nodeName + " : " + xmlDoc.documentElement.childNodes[1].childNodes[0].childNodes[0].nodeValue + " and " + xmlDoc.documentElement.childNodes[1].childNodes[1].nodeName + " : " + xmlDoc.documentElement.childNodes[1].childNodes[1].childNodes[0].nodeValue);
+				alert(xmlDoc.documentElement.childNodes[2].childNodes[0].nodeName + " : " + xmlDoc.documentElement.childNodes[2].childNodes[0].childNodes[0].nodeValue + " and " + xmlDoc.documentElement.childNodes[2].childNodes[1].nodeName + " : " + xmlDoc.documentElement.childNodes[2].childNodes[1].childNodes[0].nodeValue);
+				alert(xmlDoc.documentElement.childNodes[3].childNodes[0].nodeName + " : " + xmlDoc.documentElement.childNodes[3].childNodes[0].childNodes[0].nodeValue + " and " + xmlDoc.documentElement.childNodes[3].childNodes[1].nodeName + " : " + xmlDoc.documentElement.childNodes[3].childNodes[1].childNodes[0].nodeValue);
+				alert(xmlDoc.documentElement.childNodes[4].childNodes[0].nodeName + " : " + xmlDoc.documentElement.childNodes[4].childNodes[0].childNodes[0].nodeValue + " and " + xmlDoc.documentElement.childNodes[4].childNodes[1].nodeName + " : " + xmlDoc.documentElement.childNodes[4].childNodes[1].childNodes[0].nodeValue);
+
+				
+			}	
+		</script>
+	</head>
+	<body onload="start();">
+    
+	</body>
+</html>

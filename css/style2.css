@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Itim);
+
+body {
+	font-size: 19px;
+	font-family: 'Itim', sans-serif;
+}
+
+.t-center{
+	text-align: center;
+}
+
+.t-right{
+	text-align: right;
+}
+
+hr{
+	width: 70%;
+	margin: 10px auto;
+
+}
+
+.addUser{
+	width: 150px;
+	border:2px solid  cadetblue;
+	background: white;
+	border-radius: 20px;
+	padding: 15px;
+	margin:  20px auto;
+	text-align: center;
+}
+
+.addUser:hover{
+	background: teal;
+	color: white;
+}
+
+table{
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+th,td{
+	padding: 10px;
+}
+
+th{
+	text-align: center;
+	background-color: #dfdfdf;
+}
+
+input,select{
+	font-family: inherit;
+	font-size: inherit;
+	border-radius: 10px;
+}
+
+input[type="button" i],
+input[type="submit" i],
+input[type="reset" i]{
+	cursor: pointer;
+	padding: 10px 20px;
+}
+
+input[type="submit" i]{
+	background-color: green;
+	color: white;
+}
+
+input[type="reset" i]{
+	background-color: purple;
+	color: white;
+}
+
+
+input[type="button" i].cencel{
+	background-color: red;
+	color: white;
+}
+
+input[type="submit" i]:hover{
+	background-color: #0c590c;
+}
+
+input[type="reset" i]:hover{
+	background-color: #380138;
+}
+
+
+input[type="button" i].cencel:hover{
+	background-color: #a10000;
+}
+
+.form{
+	width: 70%;
+	background: #fef7e9;
+	margin: 0 auto;
+	border-radius: 25px;
+}

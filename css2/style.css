@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Itim);
+
+body {
+	font: 20px/24px Itim, "Angsana New", sans-serif;
+	font-family: 'Itim', sans-serif;
+	background: #F6F6F5 url("../images/bg.jpg") repeat 0 0;
+}
+
+.boxLogin{
+	width: 600px;
+	margin: 100px auto;
+	background-color: pink;
+	padding: 30px;
+	border-radius: 50px;
+
+}
+
+.t-right{
+	text-align: right;
+}
+
+.t-center{
+	text-align: center;
+}
+
+input{
+	font:inherit;
+}
+
+.show{
+	width: 500px;
+	background-color: pink;
+	border-radius: 50px;
+	margin: 50px auto;
+	padding: 30px;
+}
